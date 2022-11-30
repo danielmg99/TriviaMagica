@@ -18,14 +18,13 @@ public class JuegoGanado extends AppCompatActivity {
 
         //Referencias a los controles
         btnSalir = (Button) findViewById(R.id.btnSalir);
-    }
 
-    public void Salir(View view) {
-        Intent intent = new Intent(this, MainActivity.class); startActivity(intent);
-    }
-    public void onClick(View v) {
-        if(v.getId() == R.id.btnSalir){
-            Log.d("mensaje","ïngreso");
-        }
+        btnSalir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent salir = new Intent(JuegoGanado.this, MainActivity.class);
+                startActivity(salir);
+            }
+        });
     }
 }

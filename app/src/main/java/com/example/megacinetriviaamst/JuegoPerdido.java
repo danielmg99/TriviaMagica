@@ -38,8 +38,8 @@ public class JuegoPerdido extends AppCompatActivity {
         btnSalir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent volver = new Intent(JuegoPerdido.this, MainActivity.class);
-                startActivity(volver);
+                Intent salir = new Intent(JuegoPerdido.this, MainActivity.class);
+                startActivity(salir);
             }
         });
 
